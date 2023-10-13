@@ -1,0 +1,15 @@
+{
+  "params": {
+    "skipTrim": true,
+    "icon": "./src/assets/fishing.png",
+    "splashscreenIconRatio": "0",
+    "padding": [
+      0,
+      0
+    ],
+    "include": [
+      "all"
+    ]
+  },
+  "assets": []
+}
