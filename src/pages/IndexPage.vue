@@ -2,7 +2,7 @@
   <q-page class="flex flex-center">
     <img
       alt="Fishing"
-      src="~assets/fishing.jpg"
+      src="~assets/fishing.png"
       style="width: 250px; height: 250px"
     >
   </q-page>
