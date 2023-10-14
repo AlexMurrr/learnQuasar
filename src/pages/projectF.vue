@@ -1,11 +1,16 @@
 <template>
   <q-page padding>
-    Проэкты
+    <div class="text-h4 q-mt-sm q-mb-xs center">
+      Наши места
+    </div>  
+   
+  <proWid/>
   </q-page>
 </template>
 
 <script>
+import proWid from "../components/ProjectWidget.vue"
 export default {
-  // name: 'PageName',
+  components: {proWid}
 }
 </script>
