@@ -1,6 +1,12 @@
 <template>
-  <q-page padding>
-   Профиль
+  <q-page>
+   <div class="profile-header full-width column flex-center">
+      <q-img class= "rounded-borders" src = "../assets/ava.jpg">
+        <div class="absolute-bottom text-subtitle1 text-center">
+        Name
+      </div>
+      </q-img>
+   </div>
   </q-page>
 </template>
 
