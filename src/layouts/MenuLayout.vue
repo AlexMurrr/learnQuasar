@@ -64,11 +64,11 @@ const menuItems = ref(
         icon: 'phishing',
         link: {path: '/project'}
     },
-    // {
-    //     displayName: 'Филиaлы',
-    //     icon: 'home',
-    //     link: {path: ''}
-    // },
+    {
+        displayName: 'Посты',
+        icon: 'post',
+        link: {path: ''}
+    },
 ]
 )
 //import {menuItems} from ''
