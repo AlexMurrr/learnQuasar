@@ -1,6 +1,6 @@
 <template>
   <q-page padding>
-    <!-- content -->
+   posts
   </q-page>
 </template>
 

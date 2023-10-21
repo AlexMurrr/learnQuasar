@@ -66,8 +66,8 @@ const menuItems = ref(
     },
     {
         displayName: 'Посты',
-        icon: 'post',
-        link: {path: ''}
+        icon: 'reorder',
+        link: {path: '/posts'}
     },
 ]
 )
