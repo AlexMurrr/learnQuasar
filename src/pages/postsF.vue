@@ -7,7 +7,7 @@
         v-ripple
         v-for="post in posts"
         :key="post.id"
-        @click="basic = true"
+        @click="(basic = true), getPost(post)"
       >
         <q-item-section>
           <q-item-label overline>{{ post.title }}</q-item-label>
@@ -25,12 +25,7 @@
         <q-separator class="q-mb-md" />
 
         <q-card-section class="q-pt-none">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis
-            perferendis totam, ea at omnis vel numquam exercitationem aut, natus
-            minima, porro labore.
-          </p>
+          <p>{{ post.title }}</p>
         </q-card-section>
 
         <q-card-actions align="right">
@@ -48,8 +43,17 @@ export default {
     return {
       posts: [],
       basic: false,
+      post: null,
     };
   },
+
+  methods: {
+    getPost(p) {
+      this.basic = true;
+      this.post = p;
+    },
+  },
+
   created() {
     this.$axios
       .get("https://jsonplaceholder.typicode.com/posts")
